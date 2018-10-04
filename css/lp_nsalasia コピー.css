@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* LP追加CSS
+----------------------------------------------- */
+.ns{
+	position: relative;
+}
+.ns h2{
+	position: relative;
+	padding:10px 20px 10px 100px;
+	font-size:20px;
+	color:#FFF;
+	background: #88B826;
+	box-shadow:0 1px 3px rgba(0,0,0,0.25);
+	margin: 2rem 0 2rem 0;
+	font-weight: normal;
+}
+.ns h2::before,
+.ns h2::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	height: 0;
+	width: 0;
+	border: 5px solid transparent;
+	border-top: 5px solid #D7AC83;
+}
+.ns h2::before{
+	right: 0;
+	border-left: 5px solid #D7AC83;
+}
+.ns h2::after{
+	left: 0;
+	/* border-right: 5px solid #1A3654; */
+	border-right: 5px solid #D7AC83;
+}
+.ns .no{
+	position: relative;
+    z-index: 1;
+    left: 20px;
+    bottom: -60px;
+    margin: -30px 0px -50px;
+}
+.ns p{
+	margin: 20px 40px;
+}
+
+.fl{
+	float:left;
+	padding-right:20px;
+}
+
+.fr{
+	float:right;
+	padding-left:20px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* LP追加CSS
+----------------------------------------------- */
+img {
+	max-width: inherit;
+}
+.ns{
+	position: relative;
+	font-size: 1.1em;
+}
+.ns h2{
+	position: relative;
+	padding:10px 20px 10px 130px;
+	font-size:20px;
+	color:#FFF;
+	background: #88B826;
+	box-shadow:0 1px 3px rgba(0,0,0,0.25);
+	margin: 2rem 0 2rem 0;
+	font-weight: normal;
+}
+.ns h2::before,
+.ns h2::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	height: 0;
+	width: 0;
+	border: 5px solid transparent;
+	border-top: 5px solid #D7AC83;
+}
+.ns h2::before{
+	right: 0;
+	border-left: 5px solid #D7AC83;
+}
+.ns h2::after{
+	left: 0;
+	/* border-right: 5px solid #1A3654; */
+	border-right: 5px solid #D7AC83;
+}
+.ns h3{
+	margin: 0 0 0 40px;
+    font-size: 18px;
+    color: #88B826;
+}
+.ns .no{
+	position: relative;
+    z-index: 1;
+    left: 10px;
+    bottom: -60px;
+    margin: -30px 0px -50px;
+}
+.ns p{
+	margin: 20px 40px;
+}
+.ns table{
+	margin:0 0 0 50px;
+	background: #f2f2f2;
+}
+.ns table, .ns td,.ns th {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 40px;
+    }
+.ns .txt_red {
+	color:#f33;
+}
+.ns strong{
+	color:#f33;
+}
+.ns .waku{
+	border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fffff0;
+    padding: 10px;
+}
+.ns .wm{
+		margin: 20px 40px;
+}
+.ns .point{
+	margin: 0 auto;
+    text-align: center;
+    width: 900px;
+}
+.ns .point_contents{
+	width: 280px;
+    float: left;
+    text-align: center;
+    margin: 0 10px;
+}
+.fl{
+	float:left;
+	padding-right:20px;
+}
+
+.fr{
+	float:right;
+	padding-left:20px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.buy{
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+#sp .topimg{
+	width:100%;
+}
+#sp .no img{
+	width:40px;
+}
+#sp table{
+    font-size: 70%;
+    margin: 20px;
+    line-height: 1.5;
+}
+}
